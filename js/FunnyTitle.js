@@ -1,0 +1,1 @@
+var OriginTitle=document.title;var titleTime;document.addEventListener("visibilitychange",(function(){if(document.hidden){$('[rel="icon"]').attr("href","/img/trhx2.png");document.title="喔唷，崩溃啦！";clearTimeout(titleTime)}else{$('[rel="icon"]').attr("href","/img/trhx2.png");document.title="骗你的~";titleTime=setTimeout((function(){document.title=OriginTitle}),2e3)}}));
