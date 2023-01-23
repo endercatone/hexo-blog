@@ -1,9 +1,7 @@
 name: Gitee
-
 on:
   push:
     branches: [run-page]
-  workflow_dispatch:
 
 jobs:
   build:
