@@ -23,8 +23,8 @@
 <meta property="og:site_name" content="一个普通的博客">
 <meta property="og:description" content="Shell          Run                   function run() {             let cmd &#x3D; document.getElementById(&#39;cmd&#39;).value;             let result &#x3D; document.getElementById(&#39;result&#39;);             let outpu">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-01-20T17:05:17.924Z">
-<meta property="article:modified_time" content="2023-01-20T17:05:17.924Z">
+<meta property="article:published_time" content="2023-01-23T06:27:31.511Z">
+<meta property="article:modified_time" content="2023-01-23T06:27:31.511Z">
 <meta property="article:author" content="endercat">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -277,7 +277,7 @@
                     output = 'help ls whoami id w pwd cd cat mv rm';
                     break;
                 case 'ls':
-                    output = 'README.md tags archives categories about test';
+                    output = 'README.md tags archives categories about test js';
                     break;
                 case 'whoami':
                     output = 'endercat';
@@ -327,6 +327,9 @@
                 case 'rm test':
                     output = '权限不足';
                     break;
+                case 'rm js':
+                    output = '权限不足';
+                    break;
                 case 'su':
                     output = '鉴定故障';
                     break;
@@ -347,6 +350,12 @@
                     break;
                 case 'cd about':
                     window.location.href='/about/';
+                    break;
+                case 'cd test':
+                    output = 'bash: cd: test: 不是目录';
+                    break;
+                case 'cd js':
+                    output = 'bash: cd: js: 不是目录';
                     break;
                 default:
                     output = 'bash:command not found:'+cmd;
