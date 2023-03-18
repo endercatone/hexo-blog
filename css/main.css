@@ -2131,7 +2131,7 @@ a:active .heimu {
 }
 @font-face {
   font-family: "iconfont"; /* Project id 3868301 */
-  src: url("//at.alicdn.com/t/c/font_3868301_nbhelfu24bd.woff2?t=1674234387855") format('woff2'), url("//at.alicdn.com/t/c/font_3868301_nbhelfu24bd.woff?t=1674234387855") format('woff'), url("//at.alicdn.com/t/c/font_3868301_nbhelfu24bd.ttf?t=1674234387855") format('truetype');
+  src: url("/css/fonts/font_3868301_nbhelfu24bd.woff2") format('woff2'), url("/css/fonts/font_3868301_nbhelfu24bd.woff") format('woff'), url("/css/fonts/font_3868301_nbhelfu24bd.ttf") format('truetype');
 }
 .iconfont {
   font-family: "iconfont" !important;
