@@ -496,29 +496,25 @@
   
     <article id="comments" lazyload>
       
+  <div id="twikoo"></div>
   <script type="text/javascript">
     Fluid.utils.loadComments('#comments', function() {
-      var light = 'github-light';
-      var dark = 'github-dark';
-      var schema = document.documentElement.getAttribute('data-user-color-scheme');
-      if (schema === 'dark') {
-        schema = dark;
-      } else {
-        schema = light;
-      }
-      window.UtterancesThemeLight = light;
-      window.UtterancesThemeDark = dark;
-      var s = document.createElement('script');
-      s.setAttribute('src', 'https://utteranc.es/client.js');
-      s.setAttribute('repo', 'endercatone/hexo-blog');
-      s.setAttribute('issue-term', 'pathname');
-      
-      s.setAttribute('label', 'utterances');
-      
-      s.setAttribute('theme', schema);
-      s.setAttribute('crossorigin', 'anonymous');
-      document.getElementById('comments').appendChild(s);
-    })
+      Fluid.utils.createScript('https://lib.baomitu.com/twikoo/1.6.8/twikoo.all.min.js', function() {
+        var options = Object.assign(
+          {"envId":"https://ablog.zeabur.app","region":"ap-shanghai","path":"window.location.pathname"},
+          {
+            el: '#twikoo',
+            path: 'window.location.pathname',
+            onCommentLoaded: function() {
+              var imgSelector = '#twikoo .tk-content img:not(.tk-owo-emotion)';
+              Fluid.plugins.imageCaption(imgSelector);
+              Fluid.plugins.fancyBox(imgSelector);
+            }
+          }
+        )
+        twikoo.init(options)
+      });
+    });
   </script>
   <noscript>Please enable JavaScript to view the comments</noscript>
 
@@ -625,7 +621,7 @@
     <div class="footer-inner">
   
     <div class="footer-content">
-       <a href="https://hexo.io" target="_blank" rel="nofollow noopener" title="hexo官网"><span>Hexo</span></a> <a href="/about" tagget="_blank" rel="nofollow noopener"title="海内外的访问链接都有"><span>本站所有访问链接</span></a> 
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener" title="hexo官网"><span>Hexo</span></a> <a href="/about" tagget="_blank" rel="nofollow noopener"title="海内外的访问链接都有"><span>本站所有访问链接</span></a> <meta name="referrer" content="no-referrer"> 
     </div>
   
   
