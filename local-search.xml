@@ -4,6 +4,25 @@
   
   
   <entry>
+    <title>迁移通知</title>
+    <link href="/2023/05/02/%E8%BF%81%E7%A7%BB%E9%80%9A%E7%9F%A5/"/>
+    <url>/2023/05/02/%E8%BF%81%E7%A7%BB%E9%80%9A%E7%9F%A5/</url>
+    
+    <content type="html"><![CDATA[<p>如果没有意外，这应该本站最后一个文章了。<br>原因：</p><ol><li>由于<code>freenom</code>无法注册新域名，<code>eu.org</code>被sni阻断，所以没有可以挂在cloudflare的域名。</li><li>几乎没有人访问</li></ol><p>现在我的博客已经迁移到了 xLog，并且博客地址为 <a href="https://endercat.xlog.app/">https://endercat.xlog.app/</a><br>如果你想继续阅读我最新的文章，请访问这个链接。旧的博客文章仍然会保留，但是文章和网站将不会再更新或维护。</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>博客</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>免费领取二级域名,使用ClouDNS!</title>
     <link href="/2023/04/21/%E5%85%8D%E8%B4%B9%E9%A2%86%E5%8F%96%E4%BA%8C%E7%BA%A7%E5%9F%9F%E5%90%8D-%E4%BD%BF%E7%94%A8ClouDNS/"/>
     <url>/2023/04/21/%E5%85%8D%E8%B4%B9%E9%A2%86%E5%8F%96%E4%BA%8C%E7%BA%A7%E5%9F%9F%E5%90%8D-%E4%BD%BF%E7%94%A8ClouDNS/</url>
